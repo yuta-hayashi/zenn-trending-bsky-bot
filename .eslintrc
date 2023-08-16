@@ -10,5 +10,8 @@
     "plugin:sonarjs/recommended"
   ],
   "plugins": ["@typescript-eslint", "sonarjs"],
-  "root": true
+  "root": true,
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "warn"
+  }
 }
