@@ -1,4 +1,9 @@
 export default async function getPostText() {
-  // Generate the text for your post here. You can return a string or a promise that resolves to a string
-  return "Hello from the Bluesky API";
+  const res = await fetch('https://zenn-api.vercel.app/api/trendTech')
+    .then((res) => res.json())
+    .catch((err) => {
+      throw new Error(err)
+    })
+  const article = res[0]
+  return `${article.emoji} ${article.title}\nby ${article.user.name}\nhttps://zenn.dev${article.path}`
 }
