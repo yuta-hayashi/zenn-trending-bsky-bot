@@ -4,6 +4,6 @@ export default async function getPostText() {
     .catch((err) => {
       throw new Error(err)
     })
-  const article = res[0]
+  const article = res[Math.floor(Math.random() * res.length)]
   return `${article.emoji} ${article.title}\nby ${article.user.name}\nhttps://zenn.dev${article.path}`
 }
