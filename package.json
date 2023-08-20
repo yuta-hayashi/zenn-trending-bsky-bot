@@ -10,7 +10,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "start": "node .",
-    "dev": "nodenv ."
+    "dev": "export NODE_ENV='development'&& nodenv ."
   },
   "keywords": [
     "bsky",
