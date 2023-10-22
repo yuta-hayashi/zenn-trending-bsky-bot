@@ -1,3 +1,10 @@
+# zenn trending bsky bot
+ZennのトレンドをBlueskyにポストするBotです。
+https://bsky.app/profile/zenn-trending.bsky.social
+GitHub Actionsで動いています。
+
+---
+
 # Build your own Bluesky bot 🦋
 
 This is a template repo for building [Bluesky](https://bsky.app/) bots that post on their own schedule. It uses [TypeScript](https://www.typescriptlang.org/) to build the bot and [GitHub Actions](https://docs.github.com/en/actions) to schedule the posts.
